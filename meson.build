@@ -37,7 +37,7 @@ libraqm = library(
   install : true,
 )
 
-libraqm_test = library(
+libraqm_test = static_library(
   'raqm-test',
   'src/raqm.c',
   'src/raqm.h',
