@@ -20,12 +20,6 @@ deps = [freetype, harfbuzz, fribidi]
 
 conf = configuration_data()
 conf.set('VERSION', meson.project_version())
-if harfbuzz.type_name() == 'internal' or cc.has_function('hb_ft_font_create_referenced', dependencies : harfbuzz)
-  conf.set('HAVE_HB_FT_FONT_CREATE_REFERENCED', 1)
-endif
-if harfbuzz.type_name() == 'internal' or cc.has_function('hb_ft_font_set_load_flags', dependencies : harfbuzz)
-  conf.set('HAVE_HB_FT_FONT_SET_LOAD_FLAGS', 1)
-endif
 configure_file(output : 'config.h', configuration : conf)
 
 libraqm = library(
