@@ -20,7 +20,6 @@ deps = [freetype, harfbuzz, fribidi]
 
 conf = configuration_data()
 conf.set('VERSION', meson.project_version())
-configure_file(output : 'config.h', configuration : conf)
 
 libraqm = library(
   'raqm',
