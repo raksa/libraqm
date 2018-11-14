@@ -1,15 +1,17 @@
 os:
-  - Visual Studio 2015
+  - Visual Studio 2017
 
 environment:
   matrix:
     - ARCH: x86
-      PYTHON: "C:\\Python35"
+      PYTHON: "C:\\Python37"
     - ARCH: x64
-      PYTHON: "C:\\Python35-x64"
+      PYTHON: "C:\\Python37-x64"
 
 
 install:
+  - chcp 65001
+  - set PYTHONIOENCODING=utf-8
   - set PATH=%cd%;%PYTHON%;%PYTHON%\Scripts;%PATH%
   - pip install meson ninja
 
