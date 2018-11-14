@@ -3,17 +3,27 @@ project('raqm', 'c', version : '0.7.0', default_options : 'c_std=c99')
 cc = meson.get_compiler('c')
 pkg = import('pkgconfig')
 
-freetype = dependency('freetype2', version : '>= 12.0.6')
-harfbuzz = dependency('harfbuzz')
-fribidi = dependency('fribidi')
+freetype = dependency('freetype2', version : '>= 12.0.6',
+                      fallback : ['freetype2', 'freetype_dep'],
+                      default_options : ['png=disabled', 'bzip2=disabled',
+                                         'zlib=disabled', 'harfbuzz=disabled'])
+harfbuzz = dependency('harfbuzz',
+                      fallback : ['harfbuzz', 'libharfbuzz_dep'],
+                      default_options : ['freetype=enabled', 'ucdn=enabled',
+                                         'glib=disabled', 'cairo=disabled',
+                                         'fontconfig=disabled', 'icu=disabled',
+                                         'tests=disabled'])
+fribidi  = dependency('fribidi',
+                      fallback : ['fribidi', 'libfribidi_dep'],
+                      default_options : ['docs=false'])
 deps = [freetype, harfbuzz, fribidi]
 
 conf = configuration_data()
 conf.set('VERSION', meson.project_version())
-if cc.has_function('hb_ft_font_create_referenced', dependencies : harfbuzz)
+if harfbuzz.type_name() == 'internal' or cc.has_function('hb_ft_font_create_referenced', dependencies : harfbuzz)
   conf.set('HAVE_HB_FT_FONT_CREATE_REFERENCED', 1)
 endif
-if cc.has_function('hb_ft_font_set_load_flags', dependencies : harfbuzz)
+if harfbuzz.type_name() == 'internal' or cc.has_function('hb_ft_font_set_load_flags', dependencies : harfbuzz)
   conf.set('HAVE_HB_FT_FONT_SET_LOAD_FLAGS', 1)
 endif
 configure_file(output : 'config.h', configuration : conf)

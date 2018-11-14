@@ -29,16 +29,10 @@ script:
 addons:
   apt:
     packages:
-      - libfreetype6-dev
-      - libharfbuzz-dev
-      - libfribidi-dev
       - gtk-doc-tools
       - python3-pip
       - python3-setuptools
   homebrew:
     packages:
-      - freetype
-      - fribidi
       - gtk-doc
-      - harfbuzz
       - python
