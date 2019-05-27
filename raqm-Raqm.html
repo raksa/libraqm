@@ -2,26 +2,25 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Reference manual: Raqm</title>
-<meta name="generator" content="DocBook XSL Stylesheets V1.78.1">
-<link rel="home" href="index.html" title="Reference manual">
+<title>Raqm: Raqm Reference Manual</title>
+<meta name="generator" content="DocBook XSL Stylesheets V1.79.1">
+<link rel="home" href="index.html" title="Raqm Reference Manual">
 <link rel="up" href="ch01.html" title="Raqm API">
 <link rel="prev" href="ch01.html" title="Raqm API">
-<link rel="next" href="object-tree.html" title="Object Hierarchy">
-<meta name="generator" content="GTK-Doc V1.20 (XML mode)">
+<link rel="next" href="api-index-full.html" title="API Index">
+<meta name="generator" content="GTK-Doc V1.25 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
-<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="10"><tr valign="middle">
+<table class="navigation" id="top" width="100%" summary="Navigation header" cellpadding="2" cellspacing="5"><tr valign="middle">
 <td width="100%" align="left" class="shortcuts">
-<a href="#" class="shortcut">Top</a><span id="nav_description"> <span class="dim">|</span> 
-                  <a href="#raqm-Raqm.description" class="shortcut">Description</a></span><span id="nav_hierarchy"> <span class="dim">|</span> 
-                  <a href="#raqm-Raqm.object-hierarchy" class="shortcut">Object Hierarchy</a></span>
+<a href="#" class="shortcut">Top</a><span id="nav_description">  <span class="dim">|</span> 
+                  <a href="#raqm-Raqm.description" class="shortcut">Description</a></span>
 </td>
 <td><a accesskey="h" href="index.html"><img src="home.png" width="16" height="16" border="0" alt="Home"></a></td>
 <td><a accesskey="u" href="ch01.html"><img src="up.png" width="16" height="16" border="0" alt="Up"></a></td>
 <td><a accesskey="p" href="ch01.html"><img src="left.png" width="16" height="16" border="0" alt="Prev"></a></td>
-<td><a accesskey="n" href="object-tree.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
+<td><a accesskey="n" href="api-index-full.html"><img src="right.png" width="16" height="16" border="0" alt="Next"></a></td>
 </tr></table>
 <div class="refentry">
 <a name="raqm-Raqm"></a><div class="titlepage"></div>
@@ -34,7 +33,7 @@
 </tr></table></div>
 <div class="refsect1">
 <a name="raqm-Raqm.functions"></a><h2>Functions</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="functions_return">
 <col class="functions_name">
@@ -125,6 +124,14 @@
 <span class="returnvalue">bool</span>
 </td>
 <td class="function_name">
+<a class="link" href="raqm-Raqm.html#raqm-set-invisible-glyph" title="raqm_set_invisible_glyph ()">raqm_set_invisible_glyph</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">bool</span>
+</td>
+<td class="function_name">
 <a class="link" href="raqm-Raqm.html#raqm-add-font-feature" title="raqm_add_font_feature ()">raqm_add_font_feature</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
@@ -160,17 +167,62 @@
 <a class="link" href="raqm-Raqm.html#raqm-position-to-index" title="raqm_position_to_index ()">raqm_position_to_index</a> <span class="c_punctuation">()</span>
 </td>
 </tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">void</span>
+</td>
+<td class="function_name">
+<a class="link" href="raqm-Raqm.html#raqm-version" title="raqm_version ()">raqm_version</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">
+<span class="returnvalue">bool</span>
+</td>
+<td class="function_name">
+<a class="link" href="raqm-Raqm.html#raqm-version-atleast" title="raqm_version_atleast ()">raqm_version_atleast</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="function_type">const <span class="returnvalue">char</span> *
+</td>
+<td class="function_name">
+<a class="link" href="raqm-Raqm.html#raqm-version-string" title="raqm_version_string ()">raqm_version_string</a> <span class="c_punctuation">()</span>
+</td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name">
+<a class="link" href="raqm-Raqm.html#RAQM-VERSION-ATLEAST:CAPS" title="RAQM_VERSION_ATLEAST()">RAQM_VERSION_ATLEAST</a><span class="c_punctuation">()</span>
+</td>
+</tr>
 </tbody>
 </table></div>
 </div>
 <div class="refsect1">
 <a name="raqm-Raqm.other"></a><h2>Types and Values</h2>
-<div class="informaltable"><table width="100%" border="0">
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="name">
 <col class="description">
 </colgroup>
 <tbody>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="raqm-Raqm.html#RAQM-VERSION-MAJOR:CAPS" title="RAQM_VERSION_MAJOR">RAQM_VERSION_MAJOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="raqm-Raqm.html#RAQM-VERSION-MICRO:CAPS" title="RAQM_VERSION_MICRO">RAQM_VERSION_MICRO</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="raqm-Raqm.html#RAQM-VERSION-MINOR:CAPS" title="RAQM_VERSION_MINOR">RAQM_VERSION_MINOR</a></td>
+</tr>
+<tr>
+<td class="define_keyword">#define</td>
+<td class="function_name"><a class="link" href="raqm-Raqm.html#RAQM-VERSION-STRING:CAPS" title="RAQM_VERSION_STRING">RAQM_VERSION_STRING</a></td>
+</tr>
 <tr>
 <td class="typedef_keyword">typedef</td>
 <td class="function_name"><a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t">raqm_t</a></td>
@@ -185,11 +237,6 @@
 </tr>
 </tbody>
 </table></div>
-</div>
-<div class="refsect1">
-<a name="raqm-Raqm.object-hierarchy"></a><h2>Object Hierarchy</h2>
-<pre class="screen">
-</pre>
 </div>
 <div class="refsect1">
 <a name="raqm-Raqm.includes"></a><h2>Includes</h2>
@@ -299,13 +346,12 @@ raqm_create (<em class="parameter"><code><span class="type">void</span></code></
 <p>Creates a new <a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a> with all its internal states initialized to their
 defaults.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.2.5"></a><h4>Returns</h4>
+<a name="raqm-create.returns"></a><h4>Returns</h4>
 <p>A newly allocated <a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a> with a reference count of 1. The initial reference
 count should be released with <a class="link" href="raqm-Raqm.html#raqm-destroy" title="raqm_destroy ()"><code class="function">raqm_destroy()</code></a> when you are done using the
 <a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a>. Returns <code class="literal">NULL</code> in case of error.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -317,8 +363,8 @@ raqm_reference (<em class="parameter"><code><a class="link" href="raqm-Raqm.html
  from being
 destroyed until a matching call to <a class="link" href="raqm-Raqm.html#raqm-destroy" title="raqm_destroy ()"><code class="function">raqm_destroy()</code></a> is made.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.3.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-reference.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -332,11 +378,10 @@ destroyed until a matching call to <a class="link" href="raqm-Raqm.html#raqm-des
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.3.6"></a><h4>Returns</h4>
+<a name="raqm-reference.returns"></a><h4>Returns</h4>
 <p>The referenced <a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a>.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -349,8 +394,8 @@ raqm_destroy (<em class="parameter"><code><a class="link" href="raqm-Raqm.html#r
 and all associated resources are freed.
 See <code class="function">cairo_reference()</code>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.4.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-destroy.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -363,7 +408,7 @@ See <code class="function">cairo_reference()</code>.</p>
 </tr></tbody>
 </table></div>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -379,8 +424,8 @@ invalid character will be replaced with U+FFFD. The text should typically
 represent a full paragraph, since doing the layout of chunks of text
 separately can give improper output.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.5.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-text.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -407,11 +452,10 @@ separately can give improper output.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.5.6"></a><h4>Returns</h4>
+<a name="raqm-set-text.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -422,8 +466,8 @@ raqm_set_text_utf8 (<em class="parameter"><code><a class="link" href="raqm-Raqm.
                     <em class="parameter"><code><span class="type">size_t</span> len</code></em>);</pre>
 <p>Same as <a class="link" href="raqm-Raqm.html#raqm-set-text" title="raqm_set_text ()"><code class="function">raqm_set_text()</code></a>, but for text encoded in UTF-8 encoding.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.6.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-text-utf8.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -450,11 +494,10 @@ raqm_set_text_utf8 (<em class="parameter"><code><a class="link" href="raqm-Raqm.
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.6.6"></a><h4>Returns</h4>
+<a name="raqm-set-text-utf8.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -480,8 +523,8 @@ however, provides limited vertical text support and does not handle rotated
 horizontal text in vertical text, instead everything is treated as vertical
 text.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.7.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-par-direction.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -502,11 +545,10 @@ text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.7.8"></a><h4>Returns</h4>
+<a name="raqm-set-par-direction.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -528,8 +570,8 @@ in UTF-32).</p>
 <p>This method can be used repeatedly to set different languages for different
 parts of the text.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.8.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-language.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -562,12 +604,24 @@ parts of the text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.8.7"></a><h4>Returns</h4>
+<a name="raqm-set-language.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.2</p>
-<p class="stability">Stability Level: Unstable</p>
+<p class="since">Since: <a class="link" href="api-index-0-2.html#api-index-0.2">0.2</a></p>
+<p class="stability">Stability Level: <acronym title="Unstable interfaces are experimental or transitional. They are typically used to
+give outside developers early access to new or rapidly changing technology, or
+to provide an interim solution to a problem where a more general solution is
+anticipated. No claims are made about either source or binary compatibility from
+one minor release to the next.
+
+The Unstable interface level is a warning that these interfaces are  subject to
+change without warning and should not be used in unbundled products.
+
+Given such caveats, customer impact need not be a factor when considering
+incompatible changes to an Unstable interface in a major or minor release.
+Nonetheless, when such changes are introduced, the changes should still be
+mentioned in the release notes for the affected release.
+"><span class="acronym">Unstable</span></acronym></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -579,8 +633,8 @@ raqm_set_freetype_face (<em class="parameter"><code><a class="link" href="raqm-R
 .</p>
 <p>See also <a class="link" href="raqm-Raqm.html#raqm-set-freetype-face-range" title="raqm_set_freetype_face_range ()"><code class="function">raqm_set_freetype_face_range()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.9.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-freetype-face.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -601,11 +655,10 @@ raqm_set_freetype_face (<em class="parameter"><code><a class="link" href="raqm-R
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.9.7"></a><h4>Returns</h4>
+<a name="raqm-set-freetype-face.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -627,8 +680,8 @@ parts of the text. It is the responsibility of the client to make sure that
 face ranges cover the whole text.</p>
 <p>See also <a class="link" href="raqm-Raqm.html#raqm-set-freetype-face" title="raqm_set_freetype_face ()"><code class="function">raqm_set_freetype_face()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.10.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-freetype-face-range.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -661,11 +714,10 @@ face ranges cover the whole text.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.10.8"></a><h4>Returns</h4>
+<a name="raqm-set-freetype-face-range.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -678,8 +730,8 @@ same flags used by the client when rendering FreeType glyphs.</p>
 <p>This requires version of HarfBuzz that has <code class="function">hb_ft_font_set_load_flags()</code>, for
 older version the flags will be ignored.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.11.6"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-set-freetype-load-flags.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -700,11 +752,58 @@ older version the flags will be ignored.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.11.7"></a><h4>Returns</h4>
+<a name="raqm-set-freetype-load-flags.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.3</p>
+<p class="since">Since: <a class="link" href="api-index-0-3.html#api-index-0.3">0.3</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="raqm-set-invisible-glyph"></a><h3>raqm_set_invisible_glyph ()</h3>
+<pre class="programlisting"><span class="returnvalue">bool</span>
+raqm_set_invisible_glyph (<em class="parameter"><code><a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a> *rq</code></em>,
+                          <em class="parameter"><code><span class="type">int</span> gid</code></em>);</pre>
+<p>Sets the glyph id to be used for invisible glyhphs.</p>
+<p>If <em class="parameter"><code>gid</code></em>
+ is negative, invisible glyphs will be suppressed from the output.
+This requires HarfBuzz 1.8.0 or later. If raqm is used with an earlier
+HarfBuzz version, the return value will be <code class="literal">false</code> and the shaping behavior
+does not change.</p>
+<p>If <em class="parameter"><code>gid</code></em>
+ is zero, invisible glyphs will be rendered as space.
+This works on all versions of HarfBuzz.</p>
+<p>If <em class="parameter"><code>gid</code></em>
+ is a positive number, it will be used for invisible glyphs.
+This requires a version of HarfBuzz that has
+<code class="function">hb_buffer_set_invisible_glyph()</code>. For older versions, the return value
+will be <code class="literal">false</code> and the shaping behavior does not change.</p>
+<div class="refsect3">
+<a name="raqm-set-invisible-glyph.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>rq</p></td>
+<td class="parameter_description"><p>a <a class="link" href="raqm-Raqm.html#raqm-t" title="raqm_t"><span class="type">raqm_t</span></a>.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>gid</p></td>
+<td class="parameter_description"><p>glyph id to use for invisible glyphs.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="raqm-set-invisible-glyph.returns"></a><h4>Returns</h4>
+<p><code class="literal">true</code> if no errors happened, <code class="literal">false</code> otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-6.html#api-index-0.6">0.6</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -723,8 +822,8 @@ understood by <code class="function">hb_feature_from_string()</code>.</p>
 <p>This function can be called repeatedly, new features will be appended to the
 end of the features list and can potentially override previous features.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.12.7"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-add-font-feature.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -751,12 +850,11 @@ end of the features list and can potentially override previous features.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.12.8"></a><h4>Returns</h4>
+<a name="raqm-add-font-feature.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if parsing <em class="parameter"><code>feature</code></em>
 succeeded, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -769,8 +867,8 @@ Unicode Bidirectional Text algorithm will be applied to the text in <em class="p
 ,
 text shaping, and any other part of the layout process.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.13.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-layout.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -784,11 +882,10 @@ text shaping, and any other part of the layout process.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.13.6"></a><h4>Returns</h4>
+<a name="raqm-layout.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if the layout process was successful, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -800,8 +897,8 @@ raqm_get_glyphs (<em class="parameter"><code><a class="link" href="raqm-Raqm.htm
 containing the glyph indices in the font, their positions and other possible
 information.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.14.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-get-glyphs.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -822,12 +919,12 @@ information.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.14.6"></a><h4>Returns</h4>
+<a name="raqm-get-glyphs.returns"></a><h4>Returns</h4>
 <p>An array of <a class="link" href="raqm-Raqm.html#raqm-glyph-t" title="raqm_glyph_t"><span class="type">raqm_glyph_t</span></a>, or <code class="literal">NULL</code> in case of error. This is owned by <em class="parameter"><code>rq</code></em>
 and must not be freed. </p>
 <p><span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span></p>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -842,8 +939,8 @@ raqm_index_to_position (<em class="parameter"><code><a class="link" href="raqm-R
 is right-to-left, then the cursor will be at the left of it, whereas if the
 character is left-to-right, then the cursor will be at the right of it.</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.15.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-index-to-position.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -874,11 +971,10 @@ character is left-to-right, then the cursor will be at the right of it.</p>
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.15.6"></a><h4>Returns</h4>
+<a name="raqm-index-to-position.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if the process was successful, <code class="literal">false</code> otherwise.</p>
-<p></p>
 </div>
-<p class="since">Since 0.2</p>
+<p class="since">Since: <a class="link" href="api-index-0-2.html#api-index-0.2">0.2</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -896,8 +992,8 @@ If the position is outside the text, the last character is chosen as
 <em class="parameter"><code>index</code></em>
 .</p>
 <div class="refsect3">
-<a name="id-1.2.2.8.16.5"></a><h4>Parameters</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-position-to-index.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="150px" class="parameters_name">
 <col class="parameters_description">
@@ -928,30 +1024,191 @@ If the position is outside the text, the last character is chosen as
 </table></div>
 </div>
 <div class="refsect3">
-<a name="id-1.2.2.8.16.6"></a><h4>Returns</h4>
+<a name="raqm-position-to-index.returns"></a><h4>Returns</h4>
 <p><code class="literal">true</code> if the process was successful, <code class="literal">false</code> in case of error.</p>
-<p></p>
 </div>
-<p class="since">Since 0.2</p>
+<p class="since">Since: <a class="link" href="api-index-0-2.html#api-index-0.2">0.2</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="raqm-version"></a><h3>raqm_version ()</h3>
+<pre class="programlisting"><span class="returnvalue">void</span>
+raqm_version (<em class="parameter"><code>unsigned <span class="type">int</span> *major</code></em>,
+              <em class="parameter"><code>unsigned <span class="type">int</span> *minor</code></em>,
+              <em class="parameter"><code>unsigned <span class="type">int</span> *micro</code></em>);</pre>
+<p>Returns library version as three integer components.</p>
+<div class="refsect3">
+<a name="raqm-version.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>major</p></td>
+<td class="parameter_description"><p> Library major version component. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minor</p></td>
+<td class="parameter_description"><p> Library minor version component. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+<tr>
+<td class="parameter_name"><p>micro</p></td>
+<td class="parameter_description"><p> Library micro version component. </p></td>
+<td class="parameter_annotations"><span class="annotation">[<acronym title="Parameter for returning results. Default is transfer full."><span class="acronym">out</span></acronym>]</span></td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="raqm-version-atleast"></a><h3>raqm_version_atleast ()</h3>
+<pre class="programlisting"><span class="returnvalue">bool</span>
+raqm_version_atleast (<em class="parameter"><code>unsigned <span class="type">int</span> major</code></em>,
+                      <em class="parameter"><code>unsigned <span class="type">int</span> minor</code></em>,
+                      <em class="parameter"><code>unsigned <span class="type">int</span> micro</code></em>);</pre>
+<p>Checks if library version is less than or equal the specified version.</p>
+<div class="refsect3">
+<a name="raqm-version-atleast.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>major</p></td>
+<td class="parameter_description"><p>Library major version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minor</p></td>
+<td class="parameter_description"><p>Library minor version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>micro</p></td>
+<td class="parameter_description"><p>Library micro version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="raqm-version-atleast.returns"></a><h4>Returns</h4>
+<p><code class="literal">true</code> if library version is less than or equal the specfied version, <code class="literal">false</code>
+otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="raqm-version-string"></a><h3>raqm_version_string ()</h3>
+<pre class="programlisting">const <span class="returnvalue">char</span> *
+raqm_version_string (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<p>Returns library version as a string with three components.</p>
+<div class="refsect3">
+<a name="raqm-version-string.returns"></a><h4>Returns</h4>
+<p> library version string.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="RAQM-VERSION-ATLEAST:CAPS"></a><h3>RAQM_VERSION_ATLEAST()</h3>
+<pre class="programlisting">#define             RAQM_VERSION_ATLEAST(major,minor,micro)</pre>
+<p>Checks if library version is less than or equal the specified version.</p>
+<div class="refsect3">
+<a name="RAQM-VERSION-ATLEAST.parameters"></a><h4>Parameters</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
+<colgroup>
+<col width="150px" class="parameters_name">
+<col class="parameters_description">
+<col width="200px" class="parameters_annotations">
+</colgroup>
+<tbody>
+<tr>
+<td class="parameter_name"><p>major</p></td>
+<td class="parameter_description"><p>Library major version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>minor</p></td>
+<td class="parameter_description"><p>Library minor version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+<tr>
+<td class="parameter_name"><p>micro</p></td>
+<td class="parameter_description"><p>Library micro version component.</p></td>
+<td class="parameter_annotations"> </td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="refsect3">
+<a name="RAQM-VERSION-ATLEAST.returns"></a><h4>Returns</h4>
+<p><code class="literal">true</code> if library version is less than or equal the specfied version, <code class="literal">false</code>
+otherwise.</p>
+</div>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
 </div>
 </div>
 <div class="refsect1">
 <a name="raqm-Raqm.other_details"></a><h2>Types and Values</h2>
+<div class="refsect2">
+<a name="RAQM-VERSION-MAJOR:CAPS"></a><h3>RAQM_VERSION_MAJOR</h3>
+<pre class="programlisting">#define RAQM_VERSION_MAJOR 0
+</pre>
+<p>Library major version component.</p>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="RAQM-VERSION-MICRO:CAPS"></a><h3>RAQM_VERSION_MICRO</h3>
+<pre class="programlisting">#define RAQM_VERSION_MICRO 0
+</pre>
+<p>Library micro version component.</p>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="RAQM-VERSION-MINOR:CAPS"></a><h3>RAQM_VERSION_MINOR</h3>
+<pre class="programlisting">#define RAQM_VERSION_MINOR 7
+</pre>
+<p>Library minor version component.</p>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
+<div class="refsect2">
+<a name="RAQM-VERSION-STRING:CAPS"></a><h3>RAQM_VERSION_STRING</h3>
+<pre class="programlisting">#define RAQM_VERSION_STRING "0.7.0"
+</pre>
+<p>Library version as a string with three components.</p>
+<p class="since">Since: <a class="link" href="api-index-0-7.html#api-index-0.7">0.7</a></p>
+</div>
+<hr>
 <div class="refsect2">
 <a name="raqm-t"></a><h3>raqm_t</h3>
 <pre class="programlisting">typedef struct _raqm raqm_t;
 </pre>
 <p>This is the main object holding all state of the currently processed text as
 well as its output.</p>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="raqm-direction-t"></a><h3>enum raqm_direction_t</h3>
 <p>Base paragraph direction, see <a class="link" href="raqm-Raqm.html#raqm-set-par-direction" title="raqm_set_par_direction ()"><code class="function">raqm_set_par_direction()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.9.3.4"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-direction-t.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="enum_members_name">
 <col class="enum_members_description">
@@ -989,7 +1246,7 @@ well as its output.</p>
 </tbody>
 </table></div>
 </div>
-<p class="since">Since 0.1</p>
+<p class="since">Since: <a class="link" href="api-index-0-1.html#api-index-0.1">0.1</a></p>
 </div>
 <hr>
 <div class="refsect2">
@@ -1007,8 +1264,8 @@ well as its output.</p>
 <p>The structure that holds information about output glyphs, returned from
 <a class="link" href="raqm-Raqm.html#raqm-get-glyphs" title="raqm_get_glyphs ()"><code class="function">raqm_get_glyphs()</code></a>.</p>
 <div class="refsect3">
-<a name="id-1.2.2.9.4.5"></a><h4>Members</h4>
-<div class="informaltable"><table width="100%" border="0">
+<a name="raqm-glyph-t.members"></a><h4>Members</h4>
+<div class="informaltable"><table class="informaltable" width="100%" border="0">
 <colgroup>
 <col width="300px" class="struct_members_name">
 <col class="struct_members_description">
@@ -1058,7 +1315,6 @@ of the glyph.</p></td>
 </div>
 </div>
 <div class="footer">
-<hr>
-          Generated by GTK-Doc V1.20</div>
+<hr>Generated by GTK-Doc V1.25</div>
 </body>
 </html>
