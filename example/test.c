@@ -12,14 +12,12 @@ int main(int argc, char *argv[])
   FT_Face face = NULL;
 
   printf("\n\n\n");
-  printf("argc: %d\n", argc);
   if (argc < 5)
   {
     printf("Usage: %s FONT_FILE(./Battambang-Regular.ttf) TEXT(\"សោះស្តី\") DIRECTION(r|l) LANG(km|en)\n", argv[0]);
     printf("LANG(language code) https://www.w3.org/International/articles/language-tags/\n");
     return 1;
   }
-  // printf("%s", argv[1]);
   fontfile = argv[1];
   text = argv[2];
   direction = argv[3];
