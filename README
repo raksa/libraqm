@@ -50,6 +50,12 @@ directory:
     $ make
     $ make install
 
+For local dev
+
+    $ ./configure
+    add `install_name_tool -id @rpath/libraqm.0.dylib src/.libs/libraqm.dylib` to `all:`
+
+
 To build the documentation, pass `--enable-gtk-doc` to the `configure` script.
 
 To run the tests:
