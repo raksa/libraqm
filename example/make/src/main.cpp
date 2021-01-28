@@ -1,6 +1,8 @@
 #include <iostream>
 
-#include "utils.h"
+extern "C" {
+  #include "utils.h"
+}
 
 int main(int argc, char *argv[])
 {
