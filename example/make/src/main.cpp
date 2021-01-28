@@ -8,7 +8,6 @@ int main(int argc, char *argv[])
   const char *text;
   const char *direction;
   const char *language;
-  int ret = 1;
 
   std::cout << "\n\n\n";
   if (argc < 5)
